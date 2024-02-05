@@ -128,3 +128,25 @@ def program():
             break
         print(f"Your input is {user4_input}. What does this mean to you?")
 program()
+# Part 5 
+flavors = ["Ubuntu", "Kubuntu", "Ubuntu Cinnamon", "Lubuntu", "Ubuntu Budgie", "Edubuntu"]
+
+user_poll = {}
+
+while True:
+    username = input("Enter your username (type 'exit' to end): ")
+
+    if username.lower() == 'exit':
+        break
+
+    flavor = input("Enter your favorite Ubuntu flavor: ")
+
+    if flavor in flavors:
+        user_poll[username] = flavor
+    else:
+        print(
+            f"{username}, you have entered an invalid Ubuntu flavor. Please choose from the following valid options: {', '.join(flavors)}")
+
+print("\nPoll Results:")
+for username, flavor in user_poll.items():
+    print(f"{username}: {flavor}")
