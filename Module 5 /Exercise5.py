@@ -81,3 +81,12 @@ while True:
 
     album_info = make_album(artist, album)
     print(album_info)
+    
+# 8-9. Messages
+def show_messages(messages):
+    for message in messages:
+        print(message)
+
+messages = ['wyd?', 'When are we eating?', "I don't like football."]
+
+show_messages(messages)
