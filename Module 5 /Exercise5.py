@@ -47,3 +47,37 @@ def city_country(city, country):
 print(city_country('La Paz', 'Bolivia'))
 print(city_country('Jerusalem', 'Israel'))
 print(city_country('Tegucigalpa', 'Honduras'))
+
+# 8-7. Album
+
+def make_album(name, title, songs='None'):
+    album = {'artist': name, 'title': title}
+    if songs:
+        album['songs'] = songs
+    return album
+
+album1 = make_album('Rod Wave', 'Soulfly')
+album2 = make_album('Travis Scott', 'Utopia', songs = 14)
+
+print(album1)
+print(album2)
+
+# 8-8 User Albums
+
+def make_album(artist, album, number_of_songs=None):
+    album = {'artist': artist, 'title': album}
+    if number_of_songs:
+        album['number_of_songs'] = number_of_songs
+    return album
+
+while True:
+    artist = input("Enter the artist's name (or 'q' to quit): ")
+    if artist.lower() == 'q':
+        break
+
+    album = input("Enter the album's title (or 'q' to quit): ")
+    if album.lower() == 'q':
+        break
+
+    album_info = make_album(artist, album)
+    print(album_info)
