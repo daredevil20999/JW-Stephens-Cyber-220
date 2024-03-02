@@ -463,15 +463,15 @@ def rockies_hitter_info(name):
 
 def giants_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Patrick Bailey": "Name: Patrick Bailey\nPosition: C\nNumber: 14\nB/T: S/R\nAge: 24\n2023 Stats: .233/.285/.644 7 HR 48 RBI",
+        "Lamonte Wade Jr.": "Name: Lamonte Wade Jr.\nPosition: 1B\nNumber: 31\nB/T: L/L\nAge: 30\n2023 Stats: .256/.373/.790 17 HR 45 RBI",
+        "Thairo Estrada": "Name: Thairo Estrada\nPosition: 2B\nNumber: 39\nB/T: R/R\nAge: 28\n2023 Stats: .271/.315/.732 14 HR 49 RBI",
+        "Wilmer Flores": "Name: Wilmer Flores\nPosition: 3B\nNumber: 41\nB/T: R/R\nAge: 32\n2023 Stats: .284/.355/.864 23 HR 60 RBI",
+        "Marco Luciano": "Name: Marco Luciano\nPosition: SS\nNumber: 37\nB/T: R/R\nAge: 22\n2023 Stats: .231/.333/.641 0 HR 0 RBI",
+        "Jung Hoo Lee": "Name: Jung Hoo Lee\nPosition: LF\nNumber: 51\nB/T: L/R\nAge: 25\n2023 Stats: DNP(Rookie Season)",
+        "Michael Conforto": "Name: Michael Conforto\nPosition: CF\nNumber: 8\nB/T: L/R\nAge: 31\n2023 Stats: .239/.334/.718 15 HR 58 RBI",
+        "Mike Yastrzemski": "Name: Mike Yastrzemski\nPosition: RF\nNumber: 5\nB/T: L/L\nAge: 33\n2023 Stats: .233/.330/.775 15 HR 43 RBI",
+        "Jorge Soler": "Name: Jorge Soler\nPosition: DH\nNumber: 2\nB/T: R/R\nAge: 32\n2023 Stats: .250/.341/.853 36 HR RBI 75"
     }
     return player_info.get(name)
 
@@ -1107,7 +1107,7 @@ def giants_hitters():
 
 
    names = [
-       "Patrick Bailey", "Lamonte Wade Jr.",  "Thairo Estrada", "WIlmer Flores", "Marco Luciano", "Jung Hoo Lee", "Michael Conforto", "Mike Yastrzemski", "Jorge Soler"
+       "Patrick Bailey", "Lamonte Wade Jr.",  "Thairo Estrada", "Wilmer Flores", "Marco Luciano", "Jung Hoo Lee", "Michael Conforto", "Mike Yastrzemski", "Jorge Soler"
    ]
 
 
