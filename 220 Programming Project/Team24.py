@@ -909,7 +909,7 @@ def royals_hitters():
 
 
    names = [
-       "Salvador Perez", "Vinnie Pasquantino",  "Michael Massey", "Maikel Franco", "Bobby Witt Jr.", "Kyle Isbel", "MJ Melendez", "Hunter Renfroe", "Adam Frazier"
+       "Salvador Perez", "Vinnie Pasquantino",  "Michael Massey", "Maikel Garcia", "Bobby Witt Jr.", "Kyle Isbel", "MJ Melendez", "Hunter Renfroe", "Adam Frazier"
    ]
 
 
