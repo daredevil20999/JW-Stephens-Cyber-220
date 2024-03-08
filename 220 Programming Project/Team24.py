@@ -175,15 +175,15 @@ def whitesox_hitter_info(name):
 
 def royals_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Salvador Perez": "Name: Salvador Perez\nPosition: C\nNumber: 13\nB/T: R/R\nAge: 33\n2023 Stats: .255/.292/.714 23 HR 80 RBI",
+        "Vinnie Pasquantino": "Name: Vinnie Pasquantino\nPosition: 1B\nNumber: 9\nB/T: L/L\nAge: 26\n2023 Stats: .247/.324/.761 9 HR 26 RBI",
+        "Michael Massey": "Name: Michael Massey\nPosition: 2B\nNumber: 19\nB/T: L/R\nAge: 25\n2023 Stats: .229/.274/.655 15 HR 55 RBI",
+        "Maikel Garcia": "Name: Maikel Garcia\nPosition: 3B\nNumber: 11\nB/T: R/R\nAge: 24\n2023 Stats: .272/.323/.681 4 HR 50 RBI",
+        "Bobby Witt Jr.": "Name: Bobby Witt Jr.\nPosition: SS\nNumber: 7\nB/T: R/R\nAge: 23\n2023 Stats: .276/.319/.814 30 HR 96 RBI",
+        "Kyle Isbel": "Name: Kyle Isbel\nPosition: LF\nNumber: 28\nB/T: L/R\nAge: 27\n2023 Stats: .240/.282/.662 5 HR 34 RBI",
+        "MJ Melendez": "Name: MJ Melendez\nPosition: CF\nNumber: 1\nB/T: L/R\nAge: 25\n2023 Stats: .235/.316/.714 16 HR 56 RBI",
+        "Hunter Renfroe": "Name: Hunter Renfroe\nPosition: RF\nNumber: 16\nB/T: R/R\nAge: 32\n2023 Stats: .233/.297/.713 20 HR 60 RBI",
+        "Adam Frazier": "Name: Adam Frazier\nPosition: DH\nNumber: 26\nB/T: L/R\nAge: 32\n2023 Stats: .240/.300/.696 13 HR 60 RBI"
     }
     return player_info.get(name)
 
@@ -247,15 +247,15 @@ def rangers_hitter_info(name):
 
 def nationals_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Keibert Ruiz": "Name: Keibert Ruiz\nPosition: C\nNumber: 20\nB/T: S/R\nAge: 25\n2023 Stats: .260/.308/.717 18 HR 67 RBI",
+        "Joey Meneses": "Name: Joey Meneses\nPosition: 1B\nNumber: 45\nB/T: R/R\nAge: 31\n2023 Stats: .275/.321/.722 13 HR 89 RBI",
+        "Luis García Jr.": "Name: Luis García Jr.\nPosition: 2B\nNumber: 2\nB/T: L/R\nAge: 23\n2023 Stats: .266/.304/.689 9 HR 50 RBI",
+        "Nick Senzel": "Name: Nick Senzel\nPosition: 3B\nNumber: 13\nB/T: R/R\nAge: 28\n2023 Stats: .236/.297/.696 13 HR 42 RBI",
+        "CJ Abrams": "Name: CJ Abrams\nPosition: SS\nNumber: 5\nB/T: L/R\nAge: 23\n2023 Stats: .245/.300/.712 18 HR 64 RBI",
+        "Lane Thomas": "Name: Lane Thomas\nPosition: LF\nNumber: 28\nB/T: R/R\nAge: 28\n2023 Stats: .268/.315/.783 28 HR 86 RBI",
+        "Victor Robles": "Name: Victor Robles\nPosition: CF\nNumber: 16\nB/T: R/R\nAge: 26\n2023 Stats: .299/.385/.749 0 HR 8 RBI",
+        "Joey Gallo": "Name: Joey Gallo\nPosition: RF\nNumber: 24\nB/T: L/R\nAge: 30\n2023 Stats: .177/.301/.741 21 HR 40 RBI",
+        "Jake Alu": "Name: Jake Alu\nPosition: DH\nNumber: 39\nB/T: L/R\nAge: 26\n2023 Stats: .226/.282/.571 2 HR 16 RBI"
     }
     return player_info.get(name)
 
@@ -265,15 +265,15 @@ def nationals_hitter_info(name):
 
 def braves_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Sean Murphy": "Name: Sean Murphy\nPosition: C\nNumber: 12\nB/T: R/R\nAge: 29\n2023 Stats: .251/.365/.843 21 HR 68 RBI",
+        "Matt Olson": "Name: Matt Olson\nPosition: 1B\nNumber: 28\nB/T: L/R\nAge: 29\n2023 Stats: .283/.389/.993 54 HR 139 RBI",
+        "Ozzie Albies": "Name: Ozzie Albies\nPosition: 2B\nNumber: 1\nB/T: S/R\nAge: 27\n2023 Stats: .280/.336/.849 33 HR 109 RBI",
+        "Austin Riley": "Name: Austin Riley\nPosition: 3B\nNumber: 27\nB/T: R/R\nAge: 26\n2023 Stats: .281/.345/.861 37 HR 97 RBI",
+        "Orlando Arcia": "Name: Orlando Arcia\nPosition: SS\nNumber: 11\nB/T: R/R\nAge: 29\n2023 Stats: .264/.321/.741 17 HR 65 RBI",
+        "Jarred Kelenic": "Name: Jarred Kelenic\nPosition: LF\nNumber: 24\nB/T: L/L\nAge: 24\n2023 Stats: .253/.327/.746 11 HR 49 RBI",
+        "Michael Harris II": "Name: Michael Harris II\nPosition: CF\nNumber: 23\nB/T: L/L\nAge: 23\n2023 Stats: .293/.331/.808 18 HR 57 RBI",
+        "Ronald Acuña Jr.": "Name: Ronald Acuña Jr.\nPosition: RF\nNumber: 13\nB/T: R/R\nAge: 26\n2023 Stats: .337/.416/1.012 41 HR 106 RBI",
+        "Marcell Ozuna": "Name: Marcell Ozuna\nPosition: DH\nNumber: 20\nB/T: R/R\nAge: 33\n2023 Stats: .274/.346/.904 40 HR 100 RBI"
     }
     return player_info.get(name)
 
@@ -1179,7 +1179,7 @@ def nationals_hitters():
 
 
    names = [
-       "Keibert Ruiz", "Ildemaro Vargas",  "Luis García Jr.", "Nick Senzel", "CJ Abrams", "Lane Thomas", "Victor Robles", "Joey Gallo", "Joey Meneses"
+       "Keibert Ruiz", "Joey Meneses",  "Luis García Jr.", "Nick Senzel", "CJ Abrams", "Lane Thomas", "Victor Robles", "Joey Gallo", "Jake Alu"
    ]
 
 
