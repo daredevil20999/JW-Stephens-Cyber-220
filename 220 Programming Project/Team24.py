@@ -283,15 +283,15 @@ def braves_hitter_info(name):
 
 def diamondbacks_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Gabriel Moreno": "Name: Gabriel Moreno\nPosition: C\nNumber: 14\nB/T: R/R\nAge: 24\n2023 Stats: .284/.339/.747 7 HR 50 RBI",
+        "Christian Walker": "Name: Christian Walker\nPosition: 1B\nNumber: 53\nB/T: R/R\nAge: 32\n2023 Stats: .258/.333/.830 33 HR 103 RBI",
+        "Ketel Marte": "Name: Ketel Marte\nPosition: 2B\nNumber: 4\nB/T: S/R\nAge: 30\n2023 Stats: .276/.358/.843 25 HR 82 RBI",
+        "Eugenio Suárez": "Name: Eugenio Suárez\nPosition: 3B\nNumber: 28\nB/T: R/R\nAge: 32\n2023 Stats: .232/.323/.714 22 HR 96 RBI",
+        "Geraldo Perdomo": "Name: Geraldo Perdomo\nPosition: SS\nNumber: 2\nB/T: S/R\nAge: 24\n2023 Stats: .246/.353/.712 6 HR 47 RBI",
+        "Lourdes Gurriel Jr.": "Name: Lourdes Gurriel Jr.\nPosition: LF\nNumber: 12\nB/T: R/R\nAge: 30\n2023 Stats: .261/.309/.772 24 HR 82 RBI",
+        "Alek Thomas": "Name: Alek Thomas\nPosition: CF\nNumber: 5\nB/T: L/L\nAge: 23\n2023 Stats: .230/.273/.647 9 HR 39 RBI",
+        "Corbin Carroll": "Name: Corbin Carroll\nPosition: RF\nNumber: 7\nB/T: L/L\nAge: 23\n2023 Stats: .285/.362/.868 25 HR 76 RBI",
+        "Joc Pederson": "Name: Joc Pederson\nPosition: DH\nNumber: 3\nB/T: L/L\nAge: 31\n2023 Stats: .235/.348/.764 15 HR 51 RBI"
     }
     return player_info.get(name)
 
@@ -481,15 +481,15 @@ def giants_hitter_info(name):
 
 def pirates_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Yasmani Grandal": "Name: Yasmani Grandal\nPosition: C\nNumber: 6\nB/T: S/R\nAge: 35\n2023 Stats: .234/.309/.648 8 HR 33 RBI",
+        "Rowdy Tellez": "Name: Rowdy Tellez\nPosition: 1B\nNumber: 44\nB/T: L/L\nAge: 28\n2023 Stats: .215/.291/.667 13 HR 47 RBI",
+        "Ji Hwan Bae": "Name: Ji Hwan Bae\nPosition: 2B\nNumber: 3\nB/T: L/R\nAge: 24\n2023 Stats: .231/.296/.607 2 HR 32 RBI",
+        "Ke’Bryan Hayes": "Name: Ke’Bryan Hayes\nPosition: 3B\nNumber: 13\nB/T: R/R\nAge: 27\n2023 Stats: .271/.309/.762 15 HR 61 RBI",
+        "Oneil Cruz": "Name: Oneil Cruz\nPosition: SS\nNumber: 15\nB/T: L/R\nAge: 25\n2023 Stats: .250/.375/.750 1 HR 4 RBI",
+        "Connor Joe": "Name: Connor Joe\nPosition: LF\nNumber: 2\nB/T: R/R\nAge: 31\n2023 Stats: .247/.339/.760 11 HR 42 RBI",
+        "Bryan Reynolds": "Name: Bryan Reynolds\nPosition: CF\nNumber: 10\nB/T: S/R\nAge: 29\n2023 Stats: .263/.330/.790 24 HR 84 RBI",
+        "Henry Davis": "Name: Henry Davis\nPosition: RF\nNumber: 32\nB/T: R/R\nAge: 24\n2023 Stats: .213/.302/.653 7 HR 24 RBI",
+        "Andrew McCutchen": "Name: Andrew McCutchen\nPosition: DH\nNumber: 22\nB/T: R/R\nAge: 37\n2023 Stats: .256/.378/.775 12 HR 43 RBI"
     }
     return player_info.get(name)
 
@@ -1071,7 +1071,7 @@ def pirates_hitters():
 
 
    names = [
-       "Yasmani Grandal", "Rowdy Tellez",  "Ji Hwan Bae", "Ke’Bryan Hayes", "Oneil Cruz", "Connor Joe", "Bryan Reynolds", "Andrew McCutchen", "Henry Davis"
+       "Yasmani Grandal", "Rowdy Tellez",  "Ji Hwan Bae", "Ke’Bryan Hayes", "Oneil Cruz", "Connor Joe", "Bryan Reynolds", "Henry Davis", "Andrew McCutchen"
    ]
 
 
