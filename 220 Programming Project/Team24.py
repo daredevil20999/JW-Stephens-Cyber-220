@@ -1,33 +1,21 @@
 import tkinter as tk
 
-info = {}
+
 # All of the hitter_info functions contain the player name and bio for each team
 def orioles_hitter_info(name):
-    player_info = {
-        "Adley Rutschman": "Name: Adley Rutschman \nPosition: C \nNumber: 35 \nB/T: S/R \nAge: 26 \n2023 Stats: .277/.371/.809 20 HR 80 RBI",
-        "Ryan Mountcastle": "Name: Ryan Mountcastle \nPosition: 1B \nNumber: 6 \nB/T: R/R \nAge: 27 \n2023 Stats: .289/.302/.802 14 HR 60 RBI",
-        "Jackson Holliday": "Name: Jackson Holliday \nPosition: 2B \nNumber: 87 \nB/T: L/R \nAge: 19 \n2023 Stats: DNP (Rookie Season)",
-        "Jordan Westburg": "Name: Jordan Westburg \nPosition: 3B\nNumber: 11\nB/T R/R: \nAge: 25\n2023 Stats: .260/.311/.715 3 HR 23 RBI",
-        "Gunnar Henderson": "Name: Gunnar Henderson \nPosition: Ss\nNumber: 2\nB/T: L/R\nAge: 22 \n2023 Stats: .255/.325/.814 28 HR 82 RBI",
-        "Austin Hays": "Name: Austin Hays \nPosition: LF\nNumber: 21\nB/T: R/R\nAge: 28\n2023 Stats: .275/.325/.769 16 HR 67 RBI",
-        "Cedric Mullins": "Name: Cedric Mullins \nPosition: CF\nNumber: 31\nB/T: L/L\nAge: 29\n2023 Stats: .233/.305/.721 15 HR 74 RBI",
-        "Anthony Santander": "Name: Anthony Santander \nPosition: RF\nNumber: 25\nB/T: S/R\nAge: 29\n2023 Stats: .257/.325/.797 28 HR 95 RBI",
-        "Ryan O'Hearn": "Name: Ryan O'Hearn \nPosition: DH\nNumber: 32\nB/T: L/L\nAge: 30\n2023 Stats: .289/.322/.802 14 HR 60 RBI",
-
-    }
-    return player_info.get(name)
-
-def display_info(name):
-    global info
-    info = orioles_hitter_info(name)
-
-    root = tk.Tk()
-    root.title("Player Information")
-
-    label = tk.Label(root, text=info)
-    label.pack()
-
-    root.mainloop()
+   player_info = {
+       "Adley Rutschman": "Name: Adley Rutschman \nPosition: C \nNumber: 35 \nB/T: S/R \nAge: 26 \n2023 Stats: .277/.371/.809 20 HR 80 RBI",
+       "Ryan Mountcastle": "Name: Ryan Mountcastle \nPosition: 1B \nNumber: 6 \nB/T: R/R \nAge: 27 \n2023 Stats: .289/.302/.802 14 HR 60 RBI",
+       "Jackson Holliday": "Name: Jackson Holliday \nPosition: 2B \nNumber: 87 \nB/T: L/R \nAge: 19 \n2023 Stats: DNP (Rookie Season)",
+       "Jordan Westburg": "Name: Jordan Westburg \nPosition: 3B\nNumber: 11\nB/T R/R: \nAge: 25\n2023 Stats: .260/.311/.715 3 HR 23 RBI",
+       "Gunnar Henderson": "Name: Gunnar Henderson \nPosition: Ss\nNumber: 2\nB/T: L/R\nAge: 22 \n2023 Stats: .255/.325/.814 28 HR 82 RBI",
+       "Austin Hays": "Name: Austin Hays \nPosition: LF\nNumber: 21\nB/T: R/R\nAge: 28\n2023 Stats: .275/.325/.769 16 HR 67 RBI",
+       "Cedric Mullins": "Name: Cedric Mullins \nPosition: CF\nNumber: 31\nB/T: L/L\nAge: 29\n2023 Stats: .233/.305/.721 15 HR 74 RBI",
+       "Anthony Santander": "Name: Anthony Santander \nPosition: RF\nNumber: 25\nB/T: S/R\nAge: 29\n2023 Stats: .257/.325/.797 28 HR 95 RBI",
+       "Ryan O'Hearn": "Name: Ryan O'Hearn \nPosition: DH\nNumber: 32\nB/T: L/L\nAge: 30\n2023 Stats: .289/.322/.802 14 HR 60 RBI",
+   }
+   player_info_str = player_info.get(name)
+   show_info_window(player_info_str)
 
 def yankees_hitter_info(name):
     player_info = {
@@ -41,7 +29,8 @@ def yankees_hitter_info(name):
         "Aaron Judge": "Name: Aaron Judge \nPosition: RF\nNumber: 99\nB/T: R/R\nAge: 31\n2023 Stats: .267/.406/1.019 37 HR 75 RBI",
         "Giancarlo Stanton": "Name: Giancarlo Stanton \nPosition: DH\nNumber: 27\nB/T: R/R\nAge: 34\n2023 Stats: .191/.275/.695 24 HR 60 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
       
@@ -58,7 +47,8 @@ def brewers_hitter_info(name):
         "Sal Frelick": "Name: Sal Frelick \nPosition: RF\nNumber: 10\nB/T: L/R\nAge: 23\n2023 Stats: .246/.341/.694 3 HR 24 RBI",
         "Gary Sánchez": "Name: Gary Sánchez \nPosition: DH\nNumber: 99\nB/T: R/R\nAge: 31\n2023 Stats: .217/.288./780 19 HR 47 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
 
      
@@ -76,7 +66,8 @@ def bluejays_hitter_info(name):
         "Daulton Varsho": "Name: Daulton Varsho \nPosition: RF\nNumber: 25\nB/T: L/R\nAge: 27\n2023 Stats: .220/.285/.674 20 HR 61 RBI",
         "Justin Turner": "Name: Justin Turner \nPosition: DH\nNumber: 2\nB/T: R/R\nAge: 39\n2023 Stats: .276/.345/.800 23 HR 96 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
       
 
@@ -95,7 +86,8 @@ def redsox_hitter_info(name):
         "Tyler O'Neill": "Name: Tyler O'Neill\nPosition: RF\nNumber: 17\nB/T: R/R\nAge: 28\n2023 Stats: .231/.312/.715 9 HR 21 RBI",
         "Bobby Dalbec": "Name: Bobby Dalbec\nPosition: DH\nNumber: 29\nB/T: R/R\nAge: 28\n2023 Stats: .204/.264/.570 1 HR 1 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
        
      
@@ -114,7 +106,8 @@ def rays_hitter_info(name):
         "Harold Ramirez": "Name: Harold Ramirez\nPosition: DH\nNumber: 43\nB/T: R/R\nAge: 29\n2023 Stats: .313/.353/.813 12 HR 68 RBI"
 
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
       
 
@@ -149,7 +142,8 @@ def indians_hitter_info(name):
         "Ramón Laureano": "Name: Ramón Laureano\nPosition: RF\nNumber: 10\nB/T: R/R\nAge: 29\n2023 Stats: .224/.304/.675 9 HR 35 RBI",
         "Bo Naylor": "Name: Bo Naylor\nPosition: DH\nNumber: 23\nB/T: L/R\nAge: 24\n2023 Stats: .237/.339/.809 11 HR 32 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
       
      
@@ -167,7 +161,8 @@ def whitesox_hitter_info(name):
         "Gavin Sheets": "Name: Gavin Sheets\nPosition: RF\nNumber: 32\nB/T: L/L\nAge: 27\n2023 Stats: .203/.267/.598 10 HR 43 RBI",
         "Eloy Jiménez": "Name: Eloy Jiménez\nPosition: DH\nNumber: 74\nB/T: R/R\nAge: 27\n2023 Stats: .272/.317/.758 18 HR 64 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
       
      
@@ -185,7 +180,8 @@ def royals_hitter_info(name):
         "Hunter Renfroe": "Name: Hunter Renfroe\nPosition: RF\nNumber: 16\nB/T: R/R\nAge: 32\n2023 Stats: .233/.297/.713 20 HR 60 RBI",
         "Adam Frazier": "Name: Adam Frazier\nPosition: DH\nNumber: 26\nB/T: L/R\nAge: 32\n2023 Stats: .240/.300/.696 13 HR 60 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
       
      
@@ -203,7 +199,8 @@ def twins_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -221,7 +218,8 @@ def marlins_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -239,7 +237,8 @@ def rangers_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -257,7 +256,8 @@ def nationals_hitter_info(name):
         "Joey Gallo": "Name: Joey Gallo\nPosition: RF\nNumber: 24\nB/T: L/R\nAge: 30\n2023 Stats: .177/.301/.741 21 HR 40 RBI",
         "Jake Alu": "Name: Jake Alu\nPosition: DH\nNumber: 39\nB/T: L/R\nAge: 26\n2023 Stats: .226/.282/.571 2 HR 16 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -275,7 +275,8 @@ def braves_hitter_info(name):
         "Ronald Acuña Jr.": "Name: Ronald Acuña Jr.\nPosition: RF\nNumber: 13\nB/T: R/R\nAge: 26\n2023 Stats: .337/.416/1.012 41 HR 106 RBI",
         "Marcell Ozuna": "Name: Marcell Ozuna\nPosition: DH\nNumber: 20\nB/T: R/R\nAge: 33\n2023 Stats: .274/.346/.904 40 HR 100 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -293,7 +294,8 @@ def diamondbacks_hitter_info(name):
         "Corbin Carroll": "Name: Corbin Carroll\nPosition: RF\nNumber: 7\nB/T: L/L\nAge: 23\n2023 Stats: .285/.362/.868 25 HR 76 RBI",
         "Joc Pederson": "Name: Joc Pederson\nPosition: DH\nNumber: 3\nB/T: L/L\nAge: 31\n2023 Stats: .235/.348/.764 15 HR 51 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -311,7 +313,8 @@ def phillies_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -329,7 +332,8 @@ def mets_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -347,7 +351,8 @@ def angels_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -365,7 +370,8 @@ def astros_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -383,7 +389,8 @@ def mariners_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -401,7 +408,8 @@ def athletics_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -419,7 +427,8 @@ def padres_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -437,7 +446,8 @@ def dodgers_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -455,7 +465,8 @@ def rockies_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -473,7 +484,8 @@ def giants_hitter_info(name):
         "Mike Yastrzemski": "Name: Mike Yastrzemski\nPosition: RF\nNumber: 5\nB/T: L/L\nAge: 33\n2023 Stats: .233/.330/.775 15 HR 43 RBI",
         "Jorge Soler": "Name: Jorge Soler\nPosition: DH\nNumber: 2\nB/T: R/R\nAge: 32\n2023 Stats: .250/.341/.853 36 HR RBI 75"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -491,7 +503,8 @@ def pirates_hitter_info(name):
         "Henry Davis": "Name: Henry Davis\nPosition: RF\nNumber: 32\nB/T: R/R\nAge: 24\n2023 Stats: .213/.302/.653 7 HR 24 RBI",
         "Andrew McCutchen": "Name: Andrew McCutchen\nPosition: DH\nNumber: 22\nB/T: R/R\nAge: 37\n2023 Stats: .256/.378/.775 12 HR 43 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -509,7 +522,8 @@ def cubs_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -527,7 +541,8 @@ def reds_hitter_info(name):
         "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
         "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
      
@@ -545,10 +560,16 @@ def cardinals_hitter_info(name):
         "Jordan Walker": "Name: Jordan Walker\nPosition: RF\nNumber: 18\nB/T: R/R\nAge: 21\n2023 Stats: .276/.342/.787 16 HR 51 RBI",
         "Matt Carpenter": "Name: Matt Carpenter\nPosition: DH\nNumber: 13\nB/T: L/R\nAge: 38\n2023 Stats: .176/.322/.641 5 HR 31 RBI"
     }
-    return player_info.get(name)
+    player_info_str = player_info.get(name)
+    show_info_window(player_info_str)
 
      
-     
+def show_info_window(info):
+   info_window = tk.Toplevel()
+   info_window.title("Player Information")
+   info_label = tk.Label(info_window, text=info)
+   info_label.pack()
+
 # This function contains a dictionary with all 30 MLB team names    
 def team_names():
     teams = [
@@ -559,7 +580,7 @@ def team_names():
         "Minnesota Twins", "New York Yankees", "New York Mets", "Oakland Athletics",
         "Philadelphia Phillies", "Pittsburgh Pirates", "San Diego Padres", "San Francisco Giants",
         "Seattle Mariners", "St. Louis Cardinals", "Tampa Bay Rays", "Texas Rangers",
-        "Toronto white Jays", "Washington Nationals"
+        "Toronto Blue Jays", "Washington Nationals"
     ]
 
     teams_window = tk.Toplevel()
@@ -587,7 +608,7 @@ def hitters(team_name):
         yankees_hitters()
     elif team_name == "Tampa Bay Rays":
         rays_hitters()
-    elif team_name == "Toronto white Jays":
+    elif team_name == "Toronto Blue Jays":
         bluejays_hitters()
     elif team_name == "Boston Red Sox":
         redsox_hitters()
@@ -635,7 +656,7 @@ def hitters(team_name):
         dodgers_hitters()
     elif team_name == "San Diego Padres":
         padres_hitters()
-    elif team_name == "San Fransisco Giants":
+    elif team_name == "San Francisco Giants":
         giants_hitters()
     elif team_name == "Arizona Diamondbacks":
         diamondbacks_hitters()
@@ -650,22 +671,21 @@ def hitters(team_name):
 # This is where each team's individual hitter page is formed
 
 def orioles_hitters():
-    orioles_window = tk.Tk()
-    orioles_window.title("Baltimore Orioles Hitters")
+   orioles_window = tk.Tk()
+   orioles_window.title("Baltimore Orioles Hitters")
 
-    names = [
-        "Adley Rutschman", "Ryan Mountcastle", "Jackson Holliday",
-        "Jordan Westburg", "Gunnar Henderson", "Austin Hays",
-        "Cedric Mullins", "Anthony Santander", "Ryan O'Hearn"
-    ]
+   names = [
+       "Adley Rutschman", "Ryan Mountcastle", "Jackson Holliday",
+       "Jordan Westburg", "Gunnar Henderson", "Austin Hays",
+       "Cedric Mullins", "Anthony Santander", "Ryan O'Hearn"
+   ]
 
-    for name in names:
-        label = tk.Label(orioles_window, text=name, fg="white", cursor="hand2")
-        label.bind("<Button-1>", lambda event, name=name: display_info(name))
-                   
-        label.pack()
+   for name in names:
+       label = tk.Label(orioles_window, text=name, fg="white", cursor="hand2")
+       label.bind("<Button-1>", lambda event, name=name: orioles_hitter_info(name))
+       label.pack()
 
-    orioles_window.mainloop()
+   orioles_window.mainloop()
 
 def yankees_hitters():
     yankees_window = tk.Tk()
@@ -679,7 +699,7 @@ def yankees_hitters():
 
     for name in names:
         label = tk.Label(yankees_window, text=name, fg="white", cursor="hand2")
-        label.bind("<Button-1>", lambda event, name=name: display_info(name))
+        label.bind("<Button-1>", lambda event, name=name: yankees_hitter_info(name))
         label.pack()
 
     yankees_window.mainloop()
@@ -697,7 +717,7 @@ def bluejays_hitters():
 
    for name in names:
        label = tk.Label(bluejays_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: bluejays_hitter_info(name))
        label.pack()
 
 
@@ -716,7 +736,7 @@ def rays_hitters():
 
    for name in names:
        label = tk.Label(rays_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: rays_hitter_info(name))
        label.pack()
 
 
@@ -735,7 +755,7 @@ def redsox_hitters():
 
    for name in names:
        label = tk.Label(redsox_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: redsox_hitter_info(name))
        label.pack()
 
 
@@ -753,7 +773,7 @@ def whitesox_hitters():
 
    for name in names:
        label = tk.Label(whitesox_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: whitesox_hitter_info(name))
        label.pack()
 
 
@@ -771,7 +791,7 @@ def indians_hitters():
 
    for name in names:
        label = tk.Label(indians_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: indians_hitter_info(name))
        label.pack()
 
 
@@ -789,7 +809,7 @@ def tigers_hitters():
 
    for name in names:
        label = tk.Label(tigers_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: tigers_hitter_info(name))
        label.pack()
 
 
@@ -807,7 +827,7 @@ def diamondbacks_hitters():
 
    for name in names:
        label = tk.Label(diamondbacks_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: diamondbacks_hitter_info(name))
        label.pack()
 
 
@@ -825,7 +845,7 @@ def braves_hitters():
 
    for name in names:
        label = tk.Label(braves_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: braves_hitter_info(name))
        label.pack()
 
 
@@ -843,7 +863,7 @@ def cubs_hitters():
 
    for name in names:
        label = tk.Label(cubs_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: cubs_hitter_info(name))
        label.pack()
 
 
@@ -861,7 +881,7 @@ def reds_hitters():
 
    for name in names:
        label = tk.Label(reds_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: reds_hitter_info(name))
        label.pack()
 
 
@@ -879,7 +899,7 @@ def rockies_hitters():
 
    for name in names:
        label = tk.Label(rockies_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: rockies_hitter_info(name))
        label.pack()
 
 
@@ -897,7 +917,7 @@ def astros_hitters():
 
    for name in names:
        label = tk.Label(astros_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: astros_hitter_info(name))
        label.pack()
 
 
@@ -915,7 +935,7 @@ def royals_hitters():
 
    for name in names:
        label = tk.Label(royals_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: royals_hitter_info(name))
        label.pack()
 
 
@@ -933,7 +953,7 @@ def angels_hitters():
 
    for name in names:
        label = tk.Label(angels_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: angels_hitter_info(name))
        label.pack()
 
 
@@ -951,7 +971,7 @@ def dodgers_hitters():
 
    for name in names:
        label = tk.Label(dodgers_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: dodgers_hitter_info(name))
        label.pack()
 
 
@@ -969,7 +989,7 @@ def marlins_hitters():
 
    for name in names:
        label = tk.Label(marlins_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: marlins_hitter_info(name))
        label.pack()
 
 
@@ -985,9 +1005,9 @@ def brewers_hitters():
    ]
 
 
-   for name in names:
-       label = tk.Label(brewers_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+   for hitter_name in names:
+       label = tk.Label(brewers_window, text=hitter_name, fg="white", cursor="hand2")
+       label.bind("<Button-1>", lambda event, name=hitter_name: brewers_hitter_info(name))
        label.pack()
 
 
@@ -1005,7 +1025,7 @@ def twins_hitters():
 
    for name in names:
        label = tk.Label(twins_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: twins_hitter_info(name))
        label.pack()
 
 
@@ -1023,7 +1043,7 @@ def mets_hitters():
 
    for name in names:
        label = tk.Label(mets_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: mets_hitter_info(name))
        label.pack()
 
 
@@ -1041,7 +1061,7 @@ def athletics_hitters():
 
    for name in names:
        label = tk.Label(athletics_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: athletics_hitter_info(name))
        label.pack()
 
 
@@ -1059,7 +1079,7 @@ def phillies_hitters():
 
    for name in names:
        label = tk.Label(phillies_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: phillies_hitter_info(name))
        label.pack()
 
 
@@ -1077,7 +1097,7 @@ def pirates_hitters():
 
    for name in names:
        label = tk.Label(pirates_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: pirates_hitter_info(name))
        label.pack()
 
 
@@ -1095,7 +1115,7 @@ def padres_hitters():
 
    for name in names:
        label = tk.Label(padres_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: padres_hitter_info(name))
        label.pack()
 
 
@@ -1113,7 +1133,7 @@ def giants_hitters():
 
    for name in names:
        label = tk.Label(giants_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: giants_hitter_info(name))
        label.pack()
 
 
@@ -1131,7 +1151,7 @@ def mariners_hitters():
 
    for name in names:
        label = tk.Label(mariners_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: mariners_hitter_info(name))
        label.pack()
 
 
@@ -1149,7 +1169,7 @@ def cardinals_hitters():
 
    for name in names:
        label = tk.Label(cardinals_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: cardinals_hitter_info(name))
        label.pack()
 
 
@@ -1167,7 +1187,7 @@ def rangers_hitters():
 
    for name in names:
        label = tk.Label(rangers_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: rangers_hitter_info(name))
        label.pack()
 
 
@@ -1185,7 +1205,7 @@ def nationals_hitters():
 
    for name in names:
        label = tk.Label(nationals_window, text=name, fg="white", cursor="hand2")
-       label.bind("<Button-1>", lambda event, name=name: display_info(name))
+       label.bind("<Button-1>", lambda event, name=name: nationals_hitter_info(name))
        label.pack()
 
 
