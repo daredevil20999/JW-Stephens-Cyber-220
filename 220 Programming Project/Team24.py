@@ -303,19 +303,18 @@ def diamondbacks_hitter_info(name):
 
 def phillies_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "J.T. Realmuto": "Name: J.T. Realmuto\nPosition: C\nNumber: 10\nB/T: R/R\nAge: 32\n2023 Stats: .252/.310/.762 20 HR 63 RBI",
+        "Bryce Harper": "Name: Bryce Harper\nPosition: 1B\nNumber: 3\nB/T: L/R\nAge: 31\n2023 Stats: .293/.401/.900 21 HR 72 RBI",
+        "Bryson Stott": "Name: Bryson Stott\nPosition: 2B\nNumber: 5\nB/T: L/R\nAge: 26\n2023 Stats: .280/.329/.748 15 HR 62 RBI",
+        "Alec Bohm": "Name: Alec Bohm\nPosition: 3B\nNumber: 28\nB/T: R/R\nAge: 27\n2023 Stats: .274/.327/.764 20 HR 97 RBI",
+        "Trea Turner": "Name: Trea Turner\nPosition: SS\nNumber: 7\nB/T: R/R\nAge: 30\n2023 Stats: .266/.320/.779 26 HR 76 RBI",
+        "Brandon Marsh": "Name: Brandon Marsh\nPosition: LF\nNumber: 16\nB/T: L/R\nAge: 26\n2023 Stats: .277/.372/.830 12 HR 60 RBI",
+        "Johan Rojas": "Name: Johan Rojas\nPosition: CF\nNumber: 18\nB/T: R/R\nAge: 23\n2023 Stats: .302/.342/.772 2 HR 23 RBI",
+        "Nick Castellanos": "Name: Nick Castellanos\nPosition: RF\nNumber: 8\nB/T: R/R\nAge: 32\n2023 Stats: .272/.311/.787 29 HR 106 RBI",
+        "Kyle Schwarber": "Name: Kyle Schwarber\nPosition: DH\nNumber: 12\nB/T: L/R\nAge: 31\n2023 Stats: .197/.343/.817 47 HR 104 RBI"
     }
     player_info_str = player_info.get(name)
     show_info_window(player_info_str)
-
      
      
       
@@ -436,15 +435,15 @@ def padres_hitter_info(name):
 
 def dodgers_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Will Smith": "Name: Will Smith\nPosition: C\nNumber: 16\nB/T: R/R\nAge: 28\n2023 Stats: .261/.359/.797 19 HR 76 RBI",
+        "Freddie Freeman": "Name: Freddie Freeman\nPosition: 1B\nNumber: 5\nB/T: L/R\nAge: 34\n2023 Stats: .331/.410/.977 29 HR 102 RBI",
+        "Gavin Lux": "Name: Gavin Lux\nPosition: 2B\nNumber: 9\nB/T: L/R\nAge: 26\n2023 Stats: DNP(ACL Injury)",
+        "Max Muncy": "Name: Max Muncy\nPosition: 3B\nNumber: 13\nB/T: L/R\nAge: 33\n2023 Stats: .212/.333/.808 36 HR 105 RBI",
+        "Mookie Betts": "Name: Mookie Betts\nPosition: SS\nNumber: 50\nB/T: R/R\nAge: 31\n2023 Stats: .307/.408/.987 39 HR 107 RBI",
+        "Teoscar Hernández": "Name: Teoscar Hernández\nPosition: LF\nNumber: 37\nB/T: R/R\nAge: 31\n2023 Stats: .258/.305/.740 26 HR 93 RBI",
+        "James Outman": "Name: James Outman\nPosition: CF\nNumber: 33\nB/T: L/R\nAge: 26\n2023 Stats: .248/.353/.790 23 HR 70 RBI",
+        "Enrique Hernández": "Name: Enrique Hernández\nPosition: RF\nNumber: 8\nB/T: R/R\nAge: 32\n2023 Stats: .237/.289/.646 11 HR 61 RBI",
+        "Shohei Ohtani": "Name: Shohei Ohtani\nPosition: DH\nNumber: 17\nB/T: L/R\nAge: 29\n2023 Stats: .304/.412/.1066 44 HR 95 RBI"
     }
     player_info_str = player_info.get(name)
     show_info_window(player_info_str)
@@ -512,15 +511,15 @@ def pirates_hitter_info(name):
 
 def cubs_hitter_info(name):
     player_info = {
-        "": "Name: \nPosition: C\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 1B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 2B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: 3B\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: SS\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: LF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: CF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: RF\nNumber: \nB/T: \nAge: \n2023 Stats: ",
-        "": "Name: \nPosition: DH\nNumber: \nB/T: \nAge: \n2023 Stats: "
+        "Yan Gomes": "Name: Yan Gomes\nPosition: C\nNumber: 15\nB/T: R/R\nAge: 36\n2023 Stats: .267/.315/.723 10 HR 63 RBI",
+        "Patrick Wisdom": "Name: Patrick Wisdom\nPosition: 1B\nNumber: 16\nB/T: R/R\nAge: 32\n2023 Stats: .205/.289/.789 23 HR 46 RBI",
+        "Nick Madrigal": "Name: Nick Madrigal\nPosition: 2B\nNumber: 1\nB/T: R/R\nAge: 27\n2023 Stats: .263/.311/.663 2 HR 28 RBI",
+        "Nico Hoerner": "Name: Nico Hoerner\nPosition: 3B\nNumber: 2\nB/T: R/R\nAge: 26\n2023 Stats: .283/.346/.729 9 HR 68 RBI",
+        "Dansby Swanson": "Name: Dansby Swanson\nPosition: SS\nNumber: 7\nB/T: R/R\nAge: 30\n2023 Stats: .244/.328/.744 22 HR 80 RBI",
+        "Ian Happ": "Name: Ian Happ\nPosition: LF\nNumber: 8\nB/T: S/R\nAge: 29\n2023 Stats: .248/.360/.791 21 HR 84 RBI",
+        "Mike Tauchman": "Name: Mike Tauchman\nPosition: CF\nNumber: 40\nB/T: L/L\nAge: 33\n2023 Stats: .252/.363/.740 8 HR 48 RBI",
+        "Seiya Suzuki": "Name: Seiya Suzuki\nPosition: RF\nNumber: 27\nB/T: R/R\nAge: 29\n2023 Stats: .285/.357/.842 20 HR 74 RBI",
+        "Cody Bellinger": "Name: Cody Bellinger\nPosition: DH\nNumber: 24\nB/T: L/L\nAge: 28\n2023 Stats: .307/.356/.881 26 HR 97 RBI"
     }
     player_info_str = player_info.get(name)
     show_info_window(player_info_str)
@@ -857,7 +856,7 @@ def cubs_hitters():
 
 
    names = [
-       "Yan Gomes", "Patrick Wisdom",  "Nick Madrigal", "Nico Hoerner", "Dansby Swanson", "Ian Happ", "Pete Crow-Armstrong", "Seiya Suzuki", "Cody Bellinger"
+       "Yan Gomes", "Patrick Wisdom",  "Nick Madrigal", "Nico Hoerner", "Dansby Swanson", "Ian Happ", "Mike Tauchman", "Seiya Suzuki", "Cody Bellinger"
    ]
 
 
@@ -965,7 +964,7 @@ def dodgers_hitters():
 
 
    names = [
-       "Will Smith", "Freddie Freeman",  "Enrique Hernández", "Max Muncy", "Gavin Lux", " Teoscar Hernandez", "James Outman", "Mookie Betts", "Shohei Ohtani"
+       "Will Smith", "Freddie Freeman",  "Gavin Lux", "Max Muncy", "Mookie Betts", " Teoscar Hernández", "James Outman", "Enrique Hernández", "Shohei Ohtani"
    ]
 
 
